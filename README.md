@@ -1,4 +1,4 @@
-# 🚀 Meridian Delivery - Plataforma Descentralizada de Entregas
+# 🚀 - Plataforma Descentralizada de Entregas
 
 **Solução blockchain para revolucionar o mercado de entregas através da descentralização, transparência e automação de pagamentos.**
 

@@ -196,7 +196,7 @@ const Home: React.FC = () => {
               color: "#1a1a1a",
             }}
           >
-            Meridian Delivery
+            Cargo Trust
           </h1>
           <p
             style={{
@@ -258,7 +258,7 @@ const Home: React.FC = () => {
             title="Wallet not connected"
             placement="inline"
           >
-            To use Meridian Delivery, you need to connect your Stellar wallet.
+            To use Cargo Trust, you need to connect your Stellar wallet.
           </Alert>
         ) : error ? (
           <Alert variant="error" title="Contract error" placement="inline">

@@ -4,14 +4,11 @@ import { Layout, Card, Button, Icon, Badge } from "@stellar/design-system";
 const About: React.FC = () => {
   const teamMembers = [
     {
-      name: "Instituto Caldeira Team",
+      name: "The Team",
       role: "Blockchain Developers",
       description:
         "Specialized in decentralized solutions and Stellar technology",
-      icon: Icon.Users01 as React.ComponentType<{
-        size?: string;
-        style?: React.CSSProperties;
-      }>,
+      image: "/images/team.jpeg",
       skills: ["Blockchain", "Stellar", "Smart Contracts", "React"],
     },
   ];
@@ -59,7 +56,7 @@ const About: React.FC = () => {
           <h1
             style={{ fontSize: "3rem", marginBottom: "1rem", color: "#1a1a1a" }}
           >
-            🚀 About Meridian Delivery
+            🚀 About Cargo Trust
           </h1>
           <p
             style={{
@@ -158,13 +155,19 @@ const About: React.FC = () => {
             }}
           >
             {teamMembers.map((member) => {
-              const MemberIcon = member.icon;
               return (
                 <Card key={member.name}>
                   <div style={{ padding: "2rem", textAlign: "center" }}>
-                    <MemberIcon
-                      size="xl"
-                      style={{ marginBottom: "1rem", color: "#0066cc" }}
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      style={{
+                        width: "100%",
+                        maxWidth: "400px",
+                        height: "auto",
+                        marginBottom: "1rem",
+                        borderRadius: "8px",
+                      }}
                     />
                     <h3 style={{ marginBottom: "0.5rem", fontSize: "1.3rem" }}>
                       {member.name}
@@ -276,8 +279,8 @@ const About: React.FC = () => {
                   lineHeight: "1.6",
                 }}
               >
-                Meridian Delivery was developed as part of a hackathon focused
-                on innovative blockchain solutions. Our proposal aims to
+                Cargo Trust was developed as part of a hackathon focused on
+                innovative blockchain solutions. Our proposal aims to
                 revolutionize the delivery sector through decentralization and
                 payment automation.
               </p>

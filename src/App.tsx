@@ -1,4 +1,4 @@
-import { Button, Icon, Layout } from "@stellar/design-system";
+import { Button, Layout } from "@stellar/design-system";
 import "./App.module.css";
 import ConnectAccount from "./components/ConnectAccount.tsx";
 import { Routes, Route, Outlet, NavLink } from "react-router-dom";
@@ -12,7 +12,7 @@ const AppLayout: React.FC = () => (
   <main>
     <Layout.Header
       projectId="CARGO TRUST"
-      projectTitle="Meridian Delivery"
+      projectTitle="Cargo Trust"
       contentRight={
         <>
           <nav style={{ display: "flex", gap: "0.5rem" }}>
@@ -29,7 +29,6 @@ const AppLayout: React.FC = () => (
                   onClick={() => (window.location.href = "/carriers")}
                   disabled={isActive}
                 >
-                  <Icon.Truck01 size="md" />
                   Carriers
                 </Button>
               )}
@@ -47,7 +46,6 @@ const AppLayout: React.FC = () => (
                   onClick={() => (window.location.href = "/about")}
                   disabled={isActive}
                 >
-                  <Icon.Users01 size="md" />
                   About Us
                 </Button>
               )}
@@ -69,8 +67,8 @@ const AppLayout: React.FC = () => (
       >
         <CargoTrustLogo size="sm" showText={false} />
         <span>
-          © {new Date().getFullYear()} Meridian Delivery. Decentralized
-          delivery platform powered by blockchain.{" "}
+          © {new Date().getFullYear()} Cargo Trust. Decentralized delivery
+          platform powered by blockchain.{" "}
           <a
             href="https://opensource.org/licenses/MIT"
             target="_blank"

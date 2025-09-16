@@ -1,4 +1,4 @@
--- Schema do banco de dados SQLite para Meridian Delivery
+-- Schema do banco de dados SQLite para Cargo Trust
 -- Tabela de entregas (deliveries)
 
 CREATE TABLE IF NOT EXISTS deliveries (
