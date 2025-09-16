@@ -1,0 +1,14 @@
+# Dockerfile simples para servir arquivos estáticos
+FROM nginx:alpine
+
+# Copiar arquivos buildados (assumindo que já foram buildados localmente)
+COPY dist/ /usr/share/nginx/html/
+
+# Copiar configuração customizada do nginx
+COPY nginx.conf /etc/nginx/nginx.conf
+
+# Expor porta 80
+EXPOSE 80
+
+# Comando para iniciar nginx
+CMD ["nginx", "-g", "daemon off;"]

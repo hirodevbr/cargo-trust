@@ -1,97 +1,97 @@
-# 🚀 - Plataforma Descentralizada de Entregas
+# 🚀 - Decentralized Delivery Platform
 
-**Solução blockchain para revolucionar o mercado de entregas através da descentralização, transparência e automação de pagamentos.**
+**Blockchain solution to revolutionize the delivery market through decentralization, transparency and payment automation.**
 
-## 🎯 Visão Geral
+## 🎯 Overview
 
-Meridian Delivery é uma plataforma descentralizada construída na blockchain Stellar que resolve os principais problemas do mercado tradicional de entregas:
+Cargo Trust is a decentralized platform built on Stellar blockchain that solves the main problems of the traditional delivery market:
 
-### ❌ Problemas Identificados
+### ❌ Identified Problems
 
-1. **Falta de Confiança**: Solicitantes temem pagar sem receber, transportadoras temem entregar sem ser pagas
-2. **Centralização e Intermediários**: Plataformas centralizadas cobram altas taxas e podem atrasar processos
-3. **Falta de Transparência**: Informações podem ser alteradas, falsificadas ou excluídas
-4. **Atrasos nos Pagamentos**: Transportadoras podem esperar até 30 dias para receber
+1. **Lack of Trust**: Requesters fear paying without receiving, carriers fear delivering without being paid
+2. **Centralization and Intermediaries**: Centralized platforms charge high fees and can delay processes
+3. **Lack of Transparency**: Information can be altered, falsified or deleted
+4. **Payment Delays**: Carriers can wait up to 30 days to receive payment
 
-### ✅ Nossa Solução
+### ✅ Our Solution
 
-- **Escrow Inteligente**: Contratos inteligentes garantem pagamentos seguros
-- **Descentralização Total**: Sem intermediários, reduzindo custos e aumentando eficiência
-- **Transparência Completa**: Todas as transações registradas na blockchain
-- **Pagamentos Instantâneos**: Liberação automática após confirmação de entrega
+- **Smart Escrow**: Smart contracts ensure secure payments
+- **Total Decentralization**: No intermediaries, reducing costs and increasing efficiency
+- **Complete Transparency**: All transactions recorded on blockchain
+- **Instant Payments**: Automatic release after delivery confirmation
 
-## 🏗️ Arquitetura Técnica
+## 🏗️ Technical Architecture
 
 ### Smart Contracts (Rust/Soroban)
 
-- **DeliveryEscrowContract**: Contrato principal para gestão de entregas
-- Funcionalidades: criação, aceitação, rastreamento e pagamento de entregas
-- Validações automáticas de regras de negócio
-- Sistema de escrow nativo integrado
+- **DeliveryEscrowContract**: Main contract for delivery management
+- Features: creation, acceptance, tracking and payment of deliveries
+- Automatic validation of business rules
+- Native integrated escrow system
 
 ### Frontend (React + TypeScript)
 
-- Interface moderna construída com Stellar Design System
-- Duas interfaces principais: Solicitantes e Transportadores
-- Integração nativa com carteiras Stellar
-- Notificações em tempo real de transações
+- Modern interface built with Stellar Design System
+- Two main interfaces: Requesters and Carriers
+- Native integration with Stellar wallets
+- Real-time transaction notifications
 
-### Tecnologias Utilizadas
+### Technologies Used
 
 - ⚡️ Vite + React + TypeScript
 - 🔗 Stellar SDK & Soroban
 - 🎨 Stellar Design System
 - 🔐 Stellar Wallet Kit
-- 🧪 Stellar CLI para deployment
+- 🧪 Stellar CLI for deployment
 
-## 🚦 Como Funciona
+## 🚦 How It Works
 
-### Para Solicitantes
+### For Requesters
 
-1. **Conectar Carteira**: Integração com carteiras Stellar
-2. **Criar Solicitação**: Definir origem, destino, descrição e valor
-3. **Depósito Automático**: Valor fica em escrow no smart contract
-4. **Acompanhar Entrega**: Transparência total do processo
-5. **Liberação Automática**: Pagamento liberado após confirmação
+1. **Connect Wallet**: Integration with Stellar wallets
+2. **Create Request**: Define origin, destination, description and value
+3. **Automatic Deposit**: Value stays in escrow in smart contract
+4. **Track Delivery**: Complete transparency of the process
+5. **Automatic Release**: Payment released after confirmation
 
-### Para Transportadores
+### For Carriers
 
-1. **Explorar Oportunidades**: Ver entregas disponíveis em tempo real
-2. **Aceitar Trabalhos**: Comprometer-se com entregas específicas
-3. **Atualizar Status**: Confirmar coleta, trânsito e entrega
-4. **Receber Pagamento**: Liberação instantânea na blockchain
+1. **Explore Opportunities**: See available deliveries in real-time
+2. **Accept Jobs**: Commit to specific deliveries
+3. **Update Status**: Confirm pickup, transit and delivery
+4. **Receive Payment**: Instant release on blockchain
 
-### Fluxo de Estados
+### State Flow
 
 ```
 Open → Accepted → PickedUp → InTransit → Delivered → Completed
 ```
 
-## 💰 Economia do Token
+## 💰 Token Economy
 
-- **Moeda**: XLM (Stellar Lumens)
-- **Taxa**: 0% - sem intermediários
-- **Escrow**: Depósito automático em smart contract
-- **Liberação**: Instantânea após confirmação
-- **Transparência**: Todas as transações auditáveis
+- **Currency**: XLM (Stellar Lumens)
+- **Fee**: 0% - no intermediaries
+- **Escrow**: Automatic deposit in smart contract
+- **Release**: Instant after confirmation
+- **Transparency**: All transactions auditable
 
-## 🛠️ Requisitos Técnicos
+## 🛠️ Technical Requirements
 
-Antes de começar, certifique-se de ter instalado:
+Before starting, make sure you have installed:
 
-- [Rust](https://www.rust-lang.org/tools/install) (para smart contracts)
+- [Rust](https://www.rust-lang.org/tools/install) (for smart contracts)
 - [Node.js](https://nodejs.org/en/download/package-manager) (v22+)
 - [Stellar CLI](https://developers.stellar.org/docs/tools/cli/stellar-cli)
 - [Git](https://git-scm.com/downloads)
 
-## 🚀 Como Rodar o Projeto
+## 🚀 How to Run the Project
 
-### 1. Pré-requisitos
+### 1. Prerequisites
 
-Certifique-se de ter instalado:
+Make sure you have installed:
 
 ```bash
-# Node.js (versão 18+)
+# Node.js (version 18+)
 node --version
 
 # npm
@@ -100,261 +100,261 @@ npm --version
 # Git
 git --version
 
-# Rust (para smart contracts - opcional)
+# Rust (for smart contracts - optional)
 rustc --version
 ```
 
-### 2. Clone e Instalação
+### 2. Clone and Installation
 
 ```bash
-# Clone o repositório
+# Clone the repository
 git clone <repository-url>
-cd cargo
+cd cargo-trust
 
-# Instalar dependências
+# Install dependencies
 npm install
 ```
 
-### 3. Executar o Projeto
+### 3. Run the Project
 
-#### Opção A: Apenas Frontend (Recomendado para demonstração)
+#### Option A: Frontend Only (Recommended for demonstration)
 
 ```bash
-# Iniciar apenas o servidor de desenvolvimento
+# Start only the development server
 npx vite
 
-# Acesse: http://localhost:5173/
+# Access: http://localhost:5173/
 ```
 
-#### Opção B: Com Blockchain Stellar (Desenvolvimento completo)
+#### Option B: With Stellar Blockchain (Complete development)
 
 ```bash
-# Iniciar com blockchain local
+# Start with local blockchain
 npm run dev
 
-# Acesse: http://localhost:5173/
+# Access: http://localhost:5173/
 ```
 
-**Nota**: Se houver problemas com a rede Stellar local, use a Opção A.
+**Note**: If there are problems with the local Stellar network, use Option A.
 
-### 4. Funcionalidades Implementadas
+### 4. Implemented Features
 
-#### ✅ Interface e UX
+#### ✅ Interface and UX
 
-- ✅ **Logo Personalizado**: CARGO TRUST com design único
-- ✅ **Design Responsivo**: Funciona em desktop, tablet e mobile
-- ✅ **Sistema de Notificações**: Animações suaves e elegantes
-- ✅ **Navegação Intuitiva**: Menu claro entre páginas
-- ✅ **Feedback Visual**: Estados de loading e confirmação
+- ✅ **Custom Logo**: CARGO TRUST with unique design
+- ✅ **Responsive Design**: Works on desktop, tablet and mobile
+- ✅ **Notification System**: Smooth and elegant animations
+- ✅ **Intuitive Navigation**: Clear menu between pages
+- ✅ **Visual Feedback**: Loading and confirmation states
 
-#### ✅ Gestão de Entregas
+#### ✅ Delivery Management
 
-- ✅ **Criação de Entregas**: Formulário completo para solicitantes
-- ✅ **Aceitação de Entregas**: Interface para transportadores
-- ✅ **Atualização de Status**: Fluxo completo de estados
-- ✅ **Persistência de Dados**: Banco de dados local funcional
-- ✅ **Atualização Automática**: Sem necessidade de recarregar página
+- ✅ **Delivery Creation**: Complete form for requesters
+- ✅ **Delivery Acceptance**: Interface for carriers
+- ✅ **Status Updates**: Complete state flow
+- ✅ **Data Persistence**: Functional local database
+- ✅ **Automatic Updates**: No need to reload page
 
-#### ✅ Sistema de Estados
+#### ✅ State System
 
-- ✅ **Fluxo Completo**: Open → Accepted → PickedUp → InTransit → Delivered → Completed
-- ✅ **Validações**: Campos obrigatórios e validações de formulário
-- ✅ **Notificações**: Confirmação de cada mudança de status
-- ✅ **Histórico**: Rastreamento completo das entregas
+- ✅ **Complete Flow**: Open → Accepted → PickedUp → InTransit → Delivered → Completed
+- ✅ **Validations**: Required fields and form validations
+- ✅ **Notifications**: Confirmation of each status change
+- ✅ **History**: Complete delivery tracking
 
-#### ✅ Tecnologias
+#### ✅ Technologies
 
-- ✅ **React + TypeScript**: Interface moderna e tipada
-- ✅ **Stellar Design System**: Componentes consistentes
-- ✅ **Vite**: Build rápido e eficiente
-- ✅ **LocalStorage**: Persistência de dados local
-- ✅ **CSS Animations**: Transições suaves
+- ✅ **React + TypeScript**: Modern and typed interface
+- ✅ **Stellar Design System**: Consistent components
+- ✅ **Vite**: Fast and efficient build
+- ✅ **LocalStorage**: Local data persistence
+- ✅ **CSS Animations**: Smooth transitions
 
-#### 🔗 Blockchain (Opcional)
+#### 🔗 Blockchain (Optional)
 
-- ✅ **Smart Contracts**: Contrato de escrow em Rust/Soroban
-- ✅ **Integração Stellar**: Carteiras e transações
-- ✅ **Deploy Automático**: Scripts de deployment
-- ✅ **Configuração Flexível**: Testnet/Mainnet
+- ✅ **Smart Contracts**: Escrow contract in Rust/Soroban
+- ✅ **Stellar Integration**: Wallets and transactions
+- ✅ **Automatic Deploy**: Deployment scripts
+- ✅ **Flexible Configuration**: Testnet/Mainnet
 
-### 5. Navegação
+### 5. Navigation
 
-1. **Página Inicial** (`/`): Para solicitantes criarem entregas
-2. **Transportadores** (`/carriers`): Para transportadores aceitarem entregas
-3. **Sobre Nós** (`/about`): Informações sobre o projeto
+1. **Home Page** (`/`): For requesters to create deliveries
+2. **Carriers** (`/carriers`): For carriers to accept deliveries
+3. **About Us** (`/about`): Information about the project
 
-### 6. Testando o Sistema
+### 6. Testing the System
 
-#### Como Solicitante:
+#### As Requester:
 
-1. Acesse a página inicial
-2. Clique em "Criar Nova Entrega"
-3. Preencha os dados da entrega
-4. Clique em "Criar Entrega"
-5. Veja a notificação de sucesso
+1. Access the home page
+2. Click "Create New Delivery"
+3. Fill in delivery data
+4. Click "Create Delivery"
+5. See success notification
 
-#### Como Transportador:
+#### As Carrier:
 
-1. Acesse "Transportadores" no menu
-2. Veja entregas disponíveis
-3. Clique em "Aceitar" em uma entrega
-4. Atualize o status da entrega
-5. Veja as notificações de atualização
+1. Access "Carriers" in the menu
+2. See available deliveries
+3. Click "Accept" on a delivery
+4. Update delivery status
+5. See update notifications
 
-### 7. Solução de Problemas
+### 7. Troubleshooting
 
-#### Erro de Rede Stellar
+#### Stellar Network Error
 
 ```bash
-# Se houver problemas com blockchain local
-npx vite  # Use apenas o frontend
+# If there are problems with local blockchain
+npx vite  # Use only frontend
 ```
 
-#### Erro de Dependências
+#### Dependencies Error
 
 ```bash
-# Limpar cache e reinstalar
+# Clear cache and reinstall
 rm -rf node_modules package-lock.json
 npm install
 ```
 
-#### Erro de Compilação
+#### Compilation Error
 
 ```bash
-# Verificar erros TypeScript
+# Check TypeScript errors
 npm run build
 ```
 
-### 8. Deploy dos Contratos (Opcional)
+### 8. Contract Deployment (Optional)
 
 #### Testnet
 
 ```bash
-# Compilar contratos
+# Compile contracts
 cd contracts/cargo-trust
 cargo build --target wasm32-unknown-unknown --release
 
-# Deploy usando Stellar CLI
+# Deploy using Stellar CLI
 stellar contract deploy \
   --wasm target/wasm32-unknown-unknown/release/cargo_trust.wasm \
-  --source <sua-chave-privada> \
+  --source <your-private-key> \
   --network testnet
 ```
 
-#### Configuração para Produção
+#### Production Configuration
 
 ```bash
-# Atualizar environments.toml com contract-id
-# Editar src/contracts/util.ts para usar testnet/mainnet
+# Update environments.toml with contract-id
+# Edit src/contracts/util.ts to use testnet/mainnet
 ```
 
-## 📁 Estrutura do Projeto
+## 📁 Project Structure
 
 ```
-meridian_delivery_project/
+cargo-trust/
 ├── contracts/
-│   └── cargo-trust/            # Smart contract de escrow
+│   └── cargo-trust/            # Escrow smart contract
 │       ├── src/
-│       │   ├── lib.rs          # Lógica do contrato
-│       │   └── test.rs         # Testes unitários
+│       │   ├── lib.rs          # Contract logic
+│       │   └── test.rs         # Unit tests
 │       └── Cargo.toml
 ├── src/
-│   ├── components/              # Componentes React
-│   │   ├── CargoTrustLogo.tsx  # Logo personalizado
-│   │   ├── DatabaseStatus.tsx  # Status do banco
-│   │   ├── DatabaseTest.tsx    # Testes do banco
-│   │   └── Notification.tsx    # Sistema de notificações
-│   ├── database/               # Persistência de dados
-│   │   ├── simpleDatabase.ts   # Serviço de banco local
-│   │   └── schema.sql          # Schema do banco
-│   ├── hooks/                  # Hooks customizados
-│   │   ├── useWallet.ts        # Hook para carteira
-│   │   ├── useDeliveryContract.ts # Hook do contrato
-│   │   ├── useDeliveries.ts    # Hook de entregas
-│   │   ├── useScrollLock.ts    # Hook de scroll
-│   │   └── useModalFix.ts      # Hook de modal
+│   ├── components/              # React components
+│   │   ├── CargoTrustLogo.tsx  # Custom logo
+│   │   ├── ConnectAccount.tsx  # Account connection
+│   │   ├── Notification.tsx    # Notification system
+│   │   └── WalletButton.tsx    # Wallet button
+│   ├── database/               # Data persistence
+│   │   ├── simpleDatabase.ts   # Local database service
+│   │   └── schema.sql          # Database schema
+│   ├── hooks/                  # Custom hooks
+│   │   ├── useWallet.ts        # Wallet hook
+│   │   ├── useDeliveryContract.ts # Contract hook
+│   │   ├── useDeliveries.ts    # Deliveries hook
+│   │   ├── useScrollLock.ts    # Scroll lock hook
+│   │   └── useModalFix.ts      # Modal fix hook
 │   ├── pages/
-│   │   ├── Home.tsx            # Página dos solicitantes
-│   │   ├── Carriers.tsx        # Página dos transportadores
-│   │   └── About.tsx           # Página sobre o projeto
+│   │   ├── Home.tsx            # Requesters page
+│   │   ├── Carriers.tsx        # Carriers page
+│   │   └── About.tsx           # About project page
 │   ├── contracts/
-│   │   ├── cargoTrust.ts       # Cliente do contrato
-│   │   └── util.ts             # Utilitários
-│   └── App.tsx                 # Aplicação principal
-├── dist/                       # Build de produção
-├── target/                     # Artefatos de build Rust
-├── environments.toml           # Configuração Stellar
-├── package.json                # Dependências Node.js
-├── vite.config.ts              # Configuração Vite
-└── README.md                   # Esta documentação
+│   │   ├── cargoTrust.ts       # Contract client
+│   │   └── util.ts             # Utilities
+│   └── App.tsx                 # Main application
+├── dist/                       # Production build
+├── target/                     # Rust build artifacts
+├── environments.toml           # Stellar configuration
+├── package.json                # Node.js dependencies
+├── vite.config.ts              # Vite configuration
+└── README.md                   # This documentation
 ```
 
-## 🧪 Testes
+## 🧪 Tests
 
 ### Smart Contracts
 
 ```bash
-# Executar testes do contrato
-cd contracts/delivery_escrow
+# Run contract tests
+cd contracts/cargo-trust
 cargo test
 ```
 
 ### Frontend
 
 ```bash
-# Testes unitários
+# Unit tests
 npm test
 
-# Testes E2E
+# E2E tests
 npm run test:e2e
 ```
 
-## 🚢 Deploy e Produção
+## 🚢 Deploy and Production
 
-### Preparação
+### Preparation
 
-1. Configurar variáveis de ambiente para produção
-2. Compilar contratos para otimização
-3. Build da aplicação frontend
+1. Configure environment variables for production
+2. Compile contracts for optimization
+3. Build frontend application
 
-### Deploy Automatizado
+### Automated Deploy
 
 ```bash
-# Script de deploy completo
+# Complete deploy script
 ./scripts/deploy.sh testnet
 ./scripts/deploy.sh mainnet
 ```
 
 ## 📈 Roadmap
 
-### Fase 1: MVP ✅
+### Phase 1: MVP ✅
 
-- ✅ Smart contract básico de escrow
-- ✅ Interface para solicitantes
-- ✅ Interface para transportadores
-- ✅ Integração com carteiras Stellar
+- ✅ Basic escrow smart contract
+- ✅ Interface for requesters
+- ✅ Interface for carriers
+- ✅ Stellar wallet integration
 
-### Fase 2: Expansão 🚧
+### Phase 2: Expansion 🚧
 
-- 🔄 Sistema de reputação
-- 🔄 Integração com APIs de mapas
-- 🔄 Notificações push
-- 🔄 Sistema de disputa
+- 🔄 Reputation system
+- 🔄 Maps API integration
+- 🔄 Push notifications
+- 🔄 Dispute system
 
-### Fase 3: Escala 📋
+### Phase 3: Scale 📋
 
-- 📋 Multi-moedas (tokens personalizados)
-- 📋 Integração com IoT para rastreamento
-- 📋 Marketplace de transportadores
-- 📋 API pública para terceiros
+- 📋 Multi-currencies (custom tokens)
+- 📋 IoT integration for tracking
+- 📋 Carrier marketplace
+- 📋 Public API for third parties
 
-## 🤝 Contribuindo
+## 🤝 Contributing
 
-1. Fork o projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
+1. Fork the project
+2. Create a branch for your feature (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## 📄 License
 
@@ -362,95 +362,95 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 🏆 Hackathon Submission
 
-Este projeto foi desenvolvido para demonstrar como a blockchain Stellar pode revolucionar o mercado de entregas através de:
+This project was developed to demonstrate how Stellar blockchain can revolutionize the delivery market through:
 
-- **Descentralização**: Eliminação de intermediários
-- **Transparência**: Auditabilidade completa
-- **Automação**: Contratos inteligentes para pagamentos
-- **Eficiência**: Redução de custos e tempo
+- **Decentralization**: Elimination of intermediaries
+- **Transparency**: Complete auditability
+- **Automation**: Smart contracts for payments
+- **Efficiency**: Cost and time reduction
 
-### Diferenciais Técnicos
+### Technical Differentiators
 
-- Uso nativo do ecossistema Stellar
-- Smart contracts em Rust/Soroban
-- Interface moderna e responsiva
-- Integração com carteiras existentes
-- Sistema de escrow robusto
+- Native use of Stellar ecosystem
+- Smart contracts in Rust/Soroban
+- Modern and responsive interface
+- Integration with existing wallets
+- Robust escrow system
 
-## 🛠️ Comandos Úteis
+## 🛠️ Useful Commands
 
-### Desenvolvimento
+### Development
 
 ```bash
-# Instalar dependências
+# Install dependencies
 npm install
 
-# Executar em modo desenvolvimento (apenas frontend)
+# Run in development mode (frontend only)
 npx vite
 
-# Executar com blockchain (se disponível)
+# Run with blockchain (if available)
 npm run dev
 
-# Build para produção
+# Build for production
 npm run build
 
-# Preview do build
+# Preview build
 npm run preview
 ```
 
 ### Debugging
 
 ```bash
-# Verificar erros de TypeScript
+# Check TypeScript errors
 npx tsc --noEmit
 
-# Verificar erros de lint
+# Check lint errors
 npm run lint
 
-# Limpar cache
+# Clear cache
 rm -rf node_modules package-lock.json
 npm install
 ```
 
-### Blockchain (Opcional)
+### Blockchain (Optional)
 
 ```bash
-# Compilar contratos
+# Compile contracts
 cd contracts/cargo-trust
 cargo build --target wasm32-unknown-unknown --release
 
-# Verificar status da rede Stellar
+# Check Stellar network status
 stellar network status
 
-# Parar container local
+# Stop local container
 stellar network container stop local
 ```
 
 ## 📱 Screenshots
 
-### Página Inicial
+### Home Page
 
-- Logo CARGO TRUST personalizado
-- Formulário de criação de entregas
-- Lista de entregas do usuário
-- Sistema de notificações
+- Custom CARGO TRUST logo
+- Delivery creation form
+- User's delivery list
+- Notification system
 
-### Página Transportadores
+### Carriers Page
 
-- Lista de entregas disponíveis
-- Interface de aceitação
-- Gestão de status das entregas
-- Badges animados ("Calculando...")
+- Available deliveries list
+- Acceptance interface
+- Delivery status management
+- Animated badges ("Calculating...")
 
-### Sistema de Notificações
+### Notification System
 
-- Notificações de sucesso (verde)
-- Notificações de erro (vermelho)
-- Animações suaves
-- Auto-fechamento
+- Success notifications (green)
+- Error notifications (red)
+- Smooth animations
+- Auto-close
 
 ---
 
-**Meridian Delivery** - Transformando entregas através da blockchain 🚀
+**Cargo Trust** - Transforming deliveries through blockchain 🚀
 
-**CARGO TRUST** - Confiança em cada entrega 📦
+**CARGO TRUST** - Trust in every delivery 📦
