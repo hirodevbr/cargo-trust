@@ -356,9 +356,9 @@ npm run test:e2e
 4. Push para a branch (`git push origin feature/AmazingFeature`)
 5. Abra um Pull Request
 
-## 📄 Licença
+## 📄 License
 
-Distribuído sob a licença Apache 2.0. Veja `LICENSE` para mais informações.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 🏆 Hackathon Submission
 

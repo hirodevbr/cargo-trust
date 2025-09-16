@@ -15,7 +15,7 @@ const AppLayout: React.FC = () => (
       projectTitle="Meridian Delivery"
       contentRight={
         <>
-          <nav style={{ display: 'flex', gap: '0.5rem' }}>
+          <nav style={{ display: "flex", gap: "0.5rem" }}>
             <NavLink
               to="/carriers"
               style={{
@@ -30,7 +30,7 @@ const AppLayout: React.FC = () => (
                   disabled={isActive}
                 >
                   <Icon.Truck01 size="md" />
-                  Transportadores
+                  Carriers
                 </Button>
               )}
             </NavLink>
@@ -48,7 +48,7 @@ const AppLayout: React.FC = () => (
                   disabled={isActive}
                 >
                   <Icon.Users01 size="md" />
-                  Sobre Nós
+                  About Us
                 </Button>
               )}
             </NavLink>
@@ -59,16 +59,24 @@ const AppLayout: React.FC = () => (
     />
     <Outlet />
     <Layout.Footer>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', justifyContent: 'center' }}>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "1rem",
+          justifyContent: "center",
+        }}
+      >
         <CargoTrustLogo size="sm" showText={false} />
         <span>
-          © {new Date().getFullYear()} Meridian Delivery. Plataforma descentralizada de entregas powered by blockchain.{" "}
+          © {new Date().getFullYear()} Meridian Delivery. Decentralized
+          delivery platform powered by blockchain.{" "}
           <a
-            href="http://www.apache.org/licenses/LICENSE-2.0"
+            href="https://opensource.org/licenses/MIT"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Apache License, Version 2.0
+            MIT License
           </a>
           .
         </span>
