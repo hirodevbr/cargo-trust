@@ -1,5 +1,8 @@
 # Multi-stage build para otimizar o tamanho da imagem
-FROM node:18-alpine AS builder
+FROM node:20-alpine AS builder
+
+# Instalar dependências do sistema necessárias para compilação nativa
+RUN apk add --no-cache python3 make g++ linux-headers
 
 # Definir diretório de trabalho
 WORKDIR /app
@@ -7,8 +10,8 @@ WORKDIR /app
 # Copiar package.json e package-lock.json
 COPY package*.json ./
 
-# Instalar dependências
-RUN npm ci --only=production
+# Instalar dependências com flags para evitar problemas com usb
+RUN npm ci --ignore-scripts
 
 # Copiar código fonte
 COPY . .
